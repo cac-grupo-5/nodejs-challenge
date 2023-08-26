@@ -7,11 +7,47 @@
          content="width=device-width, initial-scale=1.0"
          />
       <title>Create</title>
+      <style>
+         .menu { background: #30343F; }
+         .itemsMenu{ list-style-type: none;     display: inline-flex;    float: right;padding-top: 8px; }
+         .link{ color: white; text-decoration: none; font-size: 17px; padding-right: 60px;}
+         /* ul.header {
+            list-style-type: none;
+            float: right;
+         }
+         nav.header {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+         }
+
+nav {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+} */
+      </style>
    </head>
    <body>
       <header>
-         <nav>
-            <picture>
+         <nav class="menu">
+            <picture >
                <a href="../index.html">
                <img
                   src="../images/branding/logo_light_horizontal.svg"
@@ -19,19 +55,13 @@
                   />
                </a>
             </picture>
-            <h1>Funkoshop</h1>
+            <ul class="itemsMenu">
+               <li><a class="link" href="./shop.html">VER TIENDA</a></li>
+               <li><a class="link" href="./login.html">ADMIN</a></li>
+               <li><a class="link" href="./registrarse.html">SALIR</a></li>
+            </ul>
          </nav>
-         <ul>
-            <li><a href="./shop.html">VER TIENDA</a></li>
-            <li><a href="./login.html">ADMIN</a></li>
-            <li><a href="./registrarse.html">SALIR</a></li>
-            <a href="./cart.html"
-               ><img
-               src="../images/icons/cart-icon.svg"
-               alt="Icono del carrito de compras"
-               /></a>
-            </li>
-         </ul>
+         
       </header>
       <!-- NOTA: Copie el nav y el footer que estaban en el index.html -->
       <h1>CREAR NUEVO ITEM</h1>
@@ -117,12 +147,14 @@
                   <li><a href="./registrarse.html">INGRESAR</a></li>
                   <li><a href="./contacto.html">CONTACTO</a></li>
                </ul>
-               <picture>
-                  <img
-                     src="../images/branding/isotype.svg"
-                     alt=""
-                     />
-               </picture>
+               <ul>
+                  <li><picture>
+                     <img
+                        src="../images/branding/isotype.svg"
+                        alt=""
+                        />
+                  </picture></li>
+               </ul>
             </nav>
          </section>
          <p>All rights reserved 2023 - Funkoshop &copy;</p>
