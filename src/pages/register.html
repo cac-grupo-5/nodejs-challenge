@@ -1,71 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Register</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav>
-            <picture>
-                <a href="../index.html">
-                    <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
-                </a>
-            </picture>
-        </nav>
-        <ul>
-            <li><a href="./pages/shop.html">VER TIENDA</a></li>
-            <li><a href="./pages/admin.html">ADMIN</a></li>
-            <li><a href="./index.html">SALIR</a></li>
-        </ul>
+      <nav>
+        <picture>
+          <a href="../index.html">
+            <img
+              src="../images/branding/logo_light_horizontal.svg"
+              alt="Isologotipo de la marca Funkoshop"
+            />
+          </a>
+        </picture>
+      </nav>
+      <ul>
+        <li><a href="./pages/shop.html">VER TIENDA</a></li>
+        <li><a href="./pages/admin.html">ADMIN</a></li>
+        <li><a href="./index.html">SALIR</a></li>
+      </ul>
     </header>
 
     <main>
-        <section>
-            <h1>CREA TU CUENTA</h1>
-            <P>Crea tu cuenta para ser parte del mundo de los funcos </P>
+      <h1>CREA TU CUENTA</h1>
+      <P>Crea tu cuenta para ser parte del mundo de los funcos </P>
+      
+      <section>
+        <form action="Register.html" method="get">
 
-            <form action="Register.html" method="get">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="John">
+          </div>
+          <br>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" placeholder="Doe">
+          </div>
+          <br>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="johndoe@correo.com">
+          </div>
+          <br>
+          <div>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" placeholder="*********">
+          </div>
+          <br>
+          <div>
+            <label for="contraseña">Repita Contraseña</label>
+            <input type="password" name="contraseña" placeholder="*********">
+          </div>
+          <br>
+          <div>
+            <button type="submit">Registrar</button>
+            <input type="checkbox" name="terminos" id="">
+            <label for="terminos">Acepto <a href="">Terminos y Condiciones</a></label>
+          </div>
+          <br>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="John"><br>
-                <br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido"  placeholder="Doe"><br>
-                <br>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email"    placeholder="johndoe@correo.com"><br>
-                <br>
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña"    placeholder="*********"><br>
-                <br>
-                <label for="contraseña">Repita Contraseña</label>
-                <input type="password" name="contraseña"    placeholder="*********"><br>
-                <br>
-                
-                <button type="submit">Registrar</button>
-                <input type="checkbox" name="terminos" id="">
-                <label for="terminos">Acepto <a href="">Terminos y  Condiciones</a></label>
-            </form>
-        </section>    
+        </form>
+      </section>
     </main>
 
+
     <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="./pages/shop.html">SHOP</a></li>
-                    <li><a href="./pages/login.html">INGRESAR</a></li>
-                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
-                <picture>
-                    <img src="./images/branding/isotype.svg" alt="">
-                </picture>
-            </nav>
-        </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="./pages/shop.html">SHOP</a></li>
+            <li><a href="./pages/login.html">INGRESAR</a></li>
+            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+          </ul>
+          <picture>
+            <img
+              src="../images/branding/isotype.svg"
+              alt=""
+            />
+          </picture>
+        </nav>
+      </section>
+      <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-</body>
+  </body>
 </html>
