@@ -1,107 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Create</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <picture>
-          <a href="../index.html">
-            <img
-              src="../images/branding/logo_light_horizontal.svg"
-              alt="Isologotipo de la marca Funkoshop"
-            />
-          </a>
-        </picture>
-      </nav>
-      <ul>
-        <li><a href="./shop.html">SHOP</a></li>
-        <li><a href="./contacto.html">CONTACTO</a></li>
-        <li><a href="./login.html">LOGIN</a></li>
-        <li>
-          <a href="./cart.html"
-            ><img
-              src="../images/icons/cart-icon.svg"
-              alt="Icono del carrito de compras"
-          /></a>
-        </li>
-      </ul>
-    </header>
-
-    <!-- NOTA: Copie el nav y el footer que estaban en el index.html -->
-    <h1>CREAR NUEVO ITEM</h1>
-
-    <div>
-      <label>Categoría:</label>
-      <select name="categoria">
-        <option
-          value=""
-          disabled
-          selected
-          hidden
-        >
-          Seleccione una categoría
-        </option>
-        <option value="1">Categoría 1</option>
-        <option value="2">Categoría 2</option>
-        <option value="3">Categoría 3</option>
-      </select>
-      <label>Licencia:</label>
-      <select name="licencia">
-        <option
-          value=""
-          disabled
-          selected
-          hidden
-        >
-          Seleccione una licencia
-        </option>
-        <option value="1">licencia 1</option>
-        <option value="2">licencia 2</option>
-        <option value="3">licencia 3</option>
-      </select>
-    </div>
-    <div>
-      <label>Nombre del producto:</label>
-      <input
-        type="text"
-        name="Nombre"
-        placeholder="ingrese el nombre del producto"
-      />
-    </div>
-
-    <div>
-      <textarea
-        rows="10"
-        cols="50"
-      ></textarea>
-    </div>
-
-    <!-- NOTA: Aún faltan secciones en esta página -->
-
-    <footer>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="./shop.html">SHOP</a></li>
-            <li><a href="./login.html">INGRESAR</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-          </ul>
-          <picture>
-            <img
-              src="../images/branding/isotype.svg"
-              alt=""
-            />
-          </picture>
-        </nav>
-      </section>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
-  </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+         />
+      <title>Create</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <picture>
+               <a href="../index.html">
+               <img
+                  src="../images/branding/logo_light_horizontal.svg"
+                  alt="Isologotipo de la marca Funkoshop"
+                  />
+               </a>
+            </picture>
+            <h1>Funkoshop</h1>
+         </nav>
+         <ul>
+            <li><a href="./shop.html">VER TIENDA</a></li>
+            <li><a href="./login.html">ADMIN</a></li>
+            <li><a href="./registrarse.html">SALIR</a></li>
+            <a href="./cart.html"
+               ><img
+               src="../images/icons/cart-icon.svg"
+               alt="Icono del carrito de compras"
+               /></a>
+            </li>
+         </ul>
+      </header>
+      <!-- NOTA: Copie el nav y el footer que estaban en el index.html -->
+      <h1>CREAR NUEVO ITEM</h1>
+      <form action="" method="post" enctype="multipart/form-data">
+         <!-- categoria y licencia -->
+         <div>
+            <label>Categoría:</label>
+            <select name="categoria">
+               <option value="" disabled selected hidden > Seleccione una categoría </option>
+               <option value="1">Categoría 1</option>
+               <option value="2">Categoría 2</option>
+               <option value="3">Categoría 3</option>
+            </select>
+            <label>Licencia:</label>
+            <select name="licencia">
+               <option value="" disabled selected hidden > Seleccione una licencia </option>
+               <option value="1">licencia 1</option>
+               <option value="2">licencia 2</option>
+               <option value="3">licencia 3</option>
+            </select>
+         </div>
+         <!-- nombre del prod -->
+         <div>
+            <label>Nombre del producto:</label>
+            <input type="text" name="Nombre" placeholder="ingrese el nombre del producto"/>
+         </div>
+         <!-- descripcion -->
+         <div>
+            <textarea rows="10" cols="50"></textarea>
+         </div>
+         <!-- sku precio y cuotas -->
+         <div>
+            <label>SKU:</label>
+            <input
+               type="text"
+               name="SKU"
+               placeholder="sskljfdshjdf3213645"
+               />
+            <label>Precio:</label>
+            <input
+               type="text"
+               name="Precio"
+               placeholder="$0.00000"
+               />
+            <label>Stock:</label>
+            <input
+               type="text"
+               name="Stock"
+               placeholder="3 unidades"
+               />
+         </div>
+         <!-- desc y cuotas -->
+         <div>
+            <label>Descuento:</label>
+            <input type="text" name="Descuento" placeholder="0 %"/>
+            <label>Cuotas:</label>
+            <select name="Cuotas">
+               <option value="" disabled selected hidden >3 cuotas sin interés</option>
+               <option value="1">6 cuotas con interés</option>
+               <option value="2">12 cuotas con interés</option>
+               <option value="3">18 cuotas con interés</option>
+            </select>
+         </div>
+         <!-- imagenes -->
+         <div>
+            <label>Imágenes:</label>
+            <input type="file" name="Imágenes" multiple/>
+         </div>
+         <!-- botones -->
+         <div>      
+            <input type="submit" value="Agregar Producto"/>
+            <button>Limpiar</button>
+         </div>
+      </form>
+      
+      <!-- NOTA: Aún faltan secciones en esta página -->
+      <footer>
+         <section>
+            <nav>
+               <ul>
+                  <li><a href="./shop.html">SHOP</a></li>
+                  <li><a href="./login.html">REGISTRARSE</a></li>
+                  <li><a href="./registrarse.html">INGRESAR</a></li>
+                  <li><a href="./contacto.html">CONTACTO</a></li>
+               </ul>
+               <picture>
+                  <img
+                     src="../images/branding/isotype.svg"
+                     alt=""
+                     />
+               </picture>
+            </nav>
+         </section>
+         <p>All rights reserved 2023 - Funkoshop &copy;</p>
+      </footer>
+   </body>
 </html>
