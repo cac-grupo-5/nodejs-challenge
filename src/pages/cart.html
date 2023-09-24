@@ -1,176 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>CARRITO</title>
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="#"
-    />
-  </head>
-  <body>
-    <!-- NOTA: Todos los elementos dentro del html deben ir dentro del body, de lo contrario no tendrán una correcta visualización en el navegador -->
+<!--head-->
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARRITO</title>
+  <!-- link para css -->
+  <link rel="stylesheet" href="cart.css">
+</head>
+<!--body-->
+<body>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script><header id="header">
+<!--header-->
     <header id="header">
-      <nav>
-        <picture>
-          <!-- NOTA: Dado que la carpeta con imagenes se llama "images" la ruta para el atributo "src" debe indicar esa carpeta. Si agregamos ../ le indicamos a la ruta que debe ir a la carpeta anterior a "pages" -->
-          <img
-            src="../images/branding/logo_light_horizontal.svg"
-            alt="ISOLOGOTIPO DE LA MARCA"
-          />
+    <nav class="navbar">
+      <picture class="">
+          <img src="src/images/branding/isotype.svg" alt="" id="branding1">
+      </picture>
+      <dl class="nabvar__menu">
+          <dt class="nabvar__item">
+              <a href="./pages/">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+          </dt>
+          <dt class="nabvar__item">
+              <a href=":/pages/">CONTACTO</a>
+      </dt>
+          <dt class="nabvar__item">
+              <a href="./pages/">LOGIN</a>
+          </dt>
+          <dt class="nabvar__cart">
+              <a href="./pages/"><img src="IMG/icons/cart-icon.svg" alt="carrito xd"></a>
+          </dt>
+      </dl>
+    </nav>
+    <nav class="navbar">
+        <picture class="">
+            <img src="src/images/branding/isotype.svg" alt="" id="branding1">
         </picture>
-        <ul>
-          <li>
-            <!-- NOTA: Acá no hace falta indicar al "href" que esta dentro de la carpeta "src" debido a que este archivo ya esta dentro de "pages" -->
-            <a href="./shop.html"
-              >SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon
-            ></a>
-          </li>
-          <li>
-            <a href="./contacto.html">CONTACTO</a>
-          </li>
-          <li>
-            <a href="./login.html">LOGIN</a>
-          </li>
-          <li>
-            <a href="./cart.html"
-              ><img
-                src="../images/icons/cart-icon.svg"
-                alt="carrito xd"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- NOTA: Para los ids que coloquemos dentro de las etiquetas debemos utilizar formatos de texto cómo camelCase, snake_case o kebab-case, entiendase palabras separadas por mayúsculas, _ o - -->
-      <section id="shopping-cart">
-        <article>
-          <h1>CARRITO DE COMPRAS</h1>
-          <table>
-            <tr>
-              <td>DETALLE DEL PRODUCTO</td>
-              <td>CANTIDAD</td>
-              <td>TOTAL</td>
-            </tr>
-          </table>
-        </article>
-      </section>
-      <!-- NOTA: Recomiendo utilizar otra tabla para esta sección de modo que quede visualmente similar a el diseño. Igual podemos consultar entre todos si es lo mejor estructuralmente-->
-      <section id="item1">
-        <article>
-          <picture>
-            <!-- NOTA: Le falta el "alt" para algunas imagenes -->
-            <img
-              src="../images/funkos/star-wars/baby-yoda-1.webp"
-              alt=""
-            />
-          </picture>
-          <div>
-            <h3>BABY YODA BLUEBALL</h3>
-            <p>STAR WARS</p>
-            <p>Precio:</p>
-          </div>
-          <div>
-            <!-- NOTA: Existe la etiqueta "input" con la propiedad "number" además le podemos dar un valor predeterminado con el atributo "placeholder"-->
-            <input
-              type="number"
-              name="cantidad1"
-              id="cantidad1"
-              placeholder="2"
-            />
-            <p>2</p>
-          </div>
-          <div>
-            <p>$3.599,98</p>
-          </div>
-          <div>
-            <p>
-              <iconify-icon icon="tabler:xbox-x"></iconify-icon>
-            </p>
-          </div>
-        </article>
-      </section>
-
-      <section id="item2">
-        <article>
-          <picture>
-            <img
-              src="../images/funkos/pokemon/pidgeotto-1.webp"
-              alt=""
-            />
-          </picture>
-          <div>
-            <h3>PIDGEOTTO</h3>
-            <p>POKEMON</p>
-            <p>Precio:</p>
-          </div>
-          <div>
-            <!-- NOTA: Acá podríamos poner otro "input" temporalmente -->
-            <input
-              type="number"
-              name="cantidad2"
-              id="cantidad2"
-              placeholder="1"
-            />
-            <p>1</p>
-          </div>
-          <div>
-            <p>$1.799,99</p>
-          </div>
-          <div>
-            <p>
-              <iconify-icon icon="tabler:xbox-x"></iconify-icon>
-            </p>
-          </div>
-        </article>
-      </section>
-      <section>
-        <h1>RESUMEN</h1>
-        <section>
-          <!-- NOTA: Recomiendo utilizar otra tabla para esta sección de modo que quede visualmente similar a el diseño -->
-          <p>CANTIDAD DE ELEMENTOS</p>
-          <p>3</p>
-          <p>SUBTOTAL</p>
-          <p>$5.399,97</p>
-          <p>ENVIO</p>
-          <p>$5.399,97</p>
+        <dl class="nabvar__menu">
+            <dt class="nabvar__item">
+                <a href="./pages/">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+            </dt>
+            <dt class="nabvar__item">
+                <a href=":/pages/">CONTACTO</a>
+        </dt>
+            <dt class="nabvar__item">
+                <a href="./pages/">LOGIN</a>
+            </dt>
+            <dt class="nabvar__cart">
+                <a href="./pages/"><img src="IMG/icons/cart-icon.svg" alt="carrito xd"></a>
+            </dt>
+        </dl>
+    </nav>
+  </header> 
+<!--main-->
+  <main>
+        <section id="DETCANTTOT">
+            <article>
+                <h1>CARRITO DE COMPRA</h1>
+                    <table>
+                    <tr>
+                        <td>DETALLE DEL PRODUCTO</td>
+                        <td>CANTIDAD</td>
+                        <td>TOTAL</td>                        
+                    </tr>
+                </table>
+            </article>
         </section>
-      </section>
-      <section>
-        <!-- NOTA: Acá se puede utilizar un "button" o una etiqueta "a" -->
-        <h2>IR A PAGAR</h2>
-      </section>
+        <section id="COMPRA 1">
+            <article>
+                <picture id="baby-yoda-1">
+                    <img src="IMG/star-wars/baby-yoda-1.webp" alt="">
+                </picture>
+                <div>
+                    <h3>BABY YODA BLUEBALL</h3>
+                    <p>STAR WARS</p>
+                    <p>Precio:</p>
+                </div>
+                <div>
+                    <p>2</p>
+                </div>
+                <div>
+                    <p>$3.599,98</p>
+                </div>
+                <p>
+                    <iconify-icon icon="tabler:xbox-x"></iconify-icon>
+                </p>
+                </div>
+            </article> 
+        </section>
+        <section id= "COMPRA 2">
+            <article>
+                <picture id="pidgeotto-1">
+                    <img src="IMG/pokemon/pidgeotto-1.webp" alt="">
+                </picture>
+                <div>
+                    <h3>PIDGEOTTO</h3>
+                    <p>POKEMON</p>
+                    <p>Precio:</p>
+                </div>
+                <div>
+                    <p>1</p>
+                </div>
+                <div>
+                    <p>$1.799,99</p>
+                </div>
+                <p>
+                    <iconify-icon icon="tabler:xbox-x"></iconify-icon>
+                </p>
+            </article>
+        </section>
+        <section>
+            <h1>RESUMEN</h1>
+            <section>
+                <p>CANTIDAD DE ELEMENTOS</p>
+                <p>3</p>
+                <p>SUBTOTAL</p>
+                <p>$5.399,97</p>
+                <p>ENVIO</p>
+                <p>$5.399,97</p>
+            </section>
+        <section>
+            <h2>IR A PAGAR</h2>
+        </section>
     </main>
-
-    <!-- NOTA: Todos los elementos dentro del html deben ir dentro del body, de lo contrario no tendrán una correcta visualización en el navegador -->
-    <footer id="footer">
+<!--footer-->
+  <footer id="footer">
       <section>
-        <!-- NOTA: Recordemos que para listas usualmente utilizamos la etiqueta "ul" con sus elementos "li" -->
-        <nav>
-          <ul>
-            <li><a href="./shop.html">SHOP</a></li>
-            <li><a href="./login.html">INGRESAR</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-          </ul>
-        </nav>
-        <picture>
-          <img
-            src="../images/branding/isotype.svg"
-            alt="Logo footer"
-          />
-        </picture>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+          <nav>
+              <dl>
+                  <dt><a href="./pages/shop.html">SHOP</a></dt>
+                  <dt><a href="./pages/">INGRESAR</a></dt>
+                  <dt><a href="./pages/">CONTACTO</a></dt>
+              </dl>
+          </nav>
+          <picture class="">
+              <img src="IMG/branding/isotype.svg" alt="Logo footer">
+          </picture>
       </section>
-    </footer>
-
-    <!-- NOTA: Las etiquetas de javascript deben ir o bien dentro del head del hmlt o en la parte inferior del body, nunca en medio del body -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  </body>
+          <p>All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
+</body>
 </html>
