@@ -7,11 +7,12 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>item</title>
+    <link rel="stylesheet" href="../styles/styles.css">
   </head>
   <body>
     <header>
-      <nav>
-        <picture>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
           <a href="../index.html">
             <img
               src="../images/branding/logo_light_horizontal.svg"
@@ -19,32 +20,34 @@
             />
           </a>
         </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link with-icon" href="../pages/shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+            <ul class="submenu__item">
+              <li class="submenu__item"><a href="" class="submenu__link">Funkos</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Remeras</a></li>
+              <li class="submenu__item"><a href="" class="submenu__link">Llaveros</a></li>
+            </ul>
+          </li>
+          <li class="navbar__item"><a class="navbar__link" href="../pages/contacto.html">CONTACTO</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="../pages/login.html">LOGIN</a></li>
+          <li class="navbar__item">
+            <a class="navbar__cart" href="../pages/cart.html">
+              <img src="../images/icons/cart-icon.svg" alt="Icono del carrito de compras"/>
+            </a>
+          </li>
+        </ul>
       </nav>
-      <ul>
-        <li><a href="../pages/shop.html">SHOP</a></li>
-        <li><a href="../pages/contacto.html">CONTACTO</a></li>
-        <li><a href="../pages/login.html">LOGIN</a></li>
-        <li>
-          <a href="../pages/cart.html">
-            <img
-              src="../images/icons/cart-icon.svg"
-              alt="Icono del carrito de compras"
-          /></a>
-        </li>
-      </ul>
     </header>
     <!-- fin del header-->
     <main>
       <section>
-        <!-- NOTA: Recomendario quitar las etiquetas "ul" y "li" dado que al ser esta la página de un item no se van a visualizar más productos en esta sección -->
-        <ul>
-          <li>
             <article>
               <picture>
                 <img
                   src="../images/funkos/star-wars/baby-yoda-1.webp"
                   alt="BABY YODA BLUEBAL"
-                />
+                />s
               </picture>
               <div>
                 <p>STAR WARS</p>
@@ -79,10 +82,7 @@
                 <p><u>Ver métodos de pago</u> - 3 CUOTAS SIN INTERÉS</p>
               </div>
             </article>
-          </li>
-        </ul>
       </section>
-    </main>
     <section>
       <h2>PRODUCTOS RELACIONADOS</h2>
       <ul>
@@ -139,8 +139,8 @@
         </li>
       </ul>
     </section>
+  </main>
     <footer>
-      <section>
         <nav>
           <ul>
             <li><a href="../pages/shop.html">SHOP</a></li>
@@ -154,7 +154,6 @@
             />
           </picture>
         </nav>
-      </section>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
   </body>
