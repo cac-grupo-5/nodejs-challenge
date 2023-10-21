@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 
 /* VARIABLES */
 :root {
@@ -58,7 +60,7 @@ html {
     color: #111111;
 }
 
-header, 
+header,
 footer {
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
@@ -78,7 +80,7 @@ a {
     font-family: inherit;
 }
 
-ul, 
+ul,
 ol {
     list-style-type: none;
 }
@@ -126,6 +128,7 @@ header {
     padding: var(--spacing-8) var(--spacing-16);
     display: inline-block;
     transition: background .3s ease-in-out;
+    position: relative;
 }
 
 .navbar__link:hover {
@@ -138,6 +141,29 @@ header {
     gap: var(--spacing-8);
 }
 
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+
+}
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
+}
+
 /*trabajando en ITEM*/
 /*art select*/
 
@@ -147,8 +173,8 @@ header {
     align-items: center;
 }
 .selection__img {
-    width: 550px;
-    height: 550px;
+    display: flex;
+    position: relative;
 }
 
 .selection__articulo {
@@ -156,28 +182,56 @@ header {
     flex-direction: column;
     gap: var(--spacing-20);
 }
+
+
+.selection__img-back {
+    display: none;
+}
+
+
+.selection__img img {
+    animation: fade .7s;
+}
+
+.selection__img:hover .selection__img-front {
+    display: none;
+}
+
+
+.selection__img:hover .selection__img-back {
+    display: block;
+}
+
+
+/*fin del hover*/
+
 .selection__titulo {
     font-size: var(--font-small);
     font-weight: 500;
 }
+
 .selection__nombre {
     font-family: var(--alternative-font);
     font-size: var(--font-jumbo);
     font-weight: 700;
 }
+
 .selection__info {
     font-size: var(--font-large);
     font-weight: 400;
 }
+
 .selection__precio {
     font-size: var(--font-jumbo);
     font-weight: 400;
 }
+
 .selection__metodo {
     font-size: var(--font-xsmall);
     font-weight: 700;
     color: #1D84B5;
 }
+
 
 /*productos relacionados*/
 
@@ -185,18 +239,63 @@ header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
+    margin: var(--spacing-68)auto;
 
 }
+
 .relacionados__title {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
-    text-decoration: uppercase;
 }
 
-.relacionados__items {
-    display: flex;
-    gap: var(--spacing-24);
+.glide__arrow {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
 }
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
+}
+
+
+/*hover producto box*/
+
+.producto-item__img {
+    display: flex;
+    position: relative;
+}
+
+.producto-item__tag {
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0;
+}
+
+.producto-item__img--back {
+    display: none;
+}
+
+.producto-item__img img {
+    animation: fade .7s;
+}
+
+.producto-item__img:hover .producto-item__img--back {
+    display: block;
+}
+
+.producto-item__img:hover .producto-item__img--front {
+    display: none;
+}
+
+/*fin del box*/
 
 .Producto-item__content {
     display: flex;
@@ -205,22 +304,49 @@ header {
     padding: var(--spacing-16);
 }
 
-.producto-item__title{
+.producto-item__title {
     font-size: var(--font-xsmall);
     font-weight: 500;
 }
+
 .producto-item__subtitle {
     font-family: var(--alternative-font);
     font-size: var(--font-medium);
     font-weight: 700;
 }
 
-.producto-item__precio{
+.producto-item__precio {
     font-size: var(--font-medium);
     font-weight: 400;
 }
+
 .producto-item__metodo {
     font-size: var(--font-xxsmall);
     font-weight: 700;
     color: #1D84B5;
+}
+
+/*footer*/
+
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+
+.footer__copy {
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+
+/*animations*/
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
