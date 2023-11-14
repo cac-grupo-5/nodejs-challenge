@@ -46,6 +46,7 @@
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;
     --spacing-20: 2.0rem;
+    --spacing-18: 1.8rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
@@ -172,6 +173,8 @@ header {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
+
+
 .selection__img {
     display: flex;
     position: relative;
@@ -232,6 +235,63 @@ header {
     color: #1D84B5;
 }
 
+.item__cart {
+    display: flex;
+    align-items: center;
+}
+
+.item__input {
+    width: 10rem;
+    border: 0.5px solid #C9C9C9;
+    padding: var(--spacing-8);
+}
+
+#quantity {
+    text-align: center;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+#add {
+    display: flex;
+    color: var(--light-font-solid);
+    background-color: var(--dark-solid);
+    width: 18px;
+    height: 16px;
+    border: none;
+    padding: 4px 4px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#subtract {
+    display: flex;
+    color: var(--light-font-solid);
+    background-color: var(--dark-solid);
+    width: 18px;
+    height: 16px;
+    border: none;
+    padding: 4px 0px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+
+.item__submit {
+    font-size: var(--font-medium);
+    font-weight: 400;
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    border: none;
+    padding: var(--spacing-8) var(--spacing-16);
+}
 
 /*productos relacionados*/
 

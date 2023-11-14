@@ -55,11 +55,16 @@
     <main class="main container">
       <section class="selection container">
         <picture class="selection__img">
-          <img class="selection__img-front"
+          <img
+            class="selection__img-front"
             src="../images/funkos/star-wars/baby-yoda-1.webp"
             alt="BABY YODA BLUEBAL"
           />
-          <img class="selection__img-back" src="../images/funkos/star-wars/baby-yoda-box.webp" alt="BABY YODA BLUEBAL BOX">
+          <img
+            class="selection__img-back"
+            src="../images/funkos/star-wars/baby-yoda-box.webp"
+            alt="BABY YODA BLUEBAL BOX"
+          />
         </picture>
         <article class="selection__articulo">
           <p class="selection__titulo">STAR WARS</p>
@@ -69,8 +74,7 @@
             edición limitada.
           </p>
           <p class="selection__precio">$ 1799,99</p>
-          <div>
-            <button class="item__quantity" type="button">-</button>
+          <div class="item__cart">
             <input
               class="item__input"
               type="text"
@@ -78,16 +82,21 @@
               id="quantity"
               placeholder="0"
             />
-            <button class="item__quantity" type="button">+</button>
+            <div class="botones">
+              <button id="add" class="item__quantity" type="button">+</button>
+              <button id="subtract" class="item__quantity" type="button">
+                -
+              </button>
+            </div>
             <button
               class="item__submit btn btn --primary btn--medium"
               type="submit"
             >
-              Agregar al Carrito
+              Agregar al Carritos
             </button>
           </div>
           <p class="selection__metodo">
-            <u>Ver métodos de pago</u> - 3 CUOTAS SIN INTERÉS
+            <a href=""><u>Ver métodos de pago</u></a> - 3 CUOTAS SIN INTERÉS
           </p>
         </article>
       </section>
@@ -171,8 +180,12 @@
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="ic:twotone-chevron-left"></iconify-icon></button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:twotone-chevron-right"></iconify-icon></button>
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <iconify-icon icon="ic:twotone-chevron-left"></iconify-icon>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <iconify-icon icon="ic:twotone-chevron-right"></iconify-icon>
+          </button>
         </div>
       </section>
     </main>
